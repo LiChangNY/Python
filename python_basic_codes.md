@@ -1,6 +1,10 @@
 Python Basic Codes
 ==============================================================================
-
+### run this before anything
+```
+import os
+os.chdir("/Users/changli/Desktop/Course/Udacity/Machine_Learning/final_project") 
+```
 
 ##Initiate Python Shell
 ```
@@ -10,10 +14,35 @@ pwd    #find current working directory
 cd path      #change directory to path
 ```
 
-##install or update moddules
+##install or update modules
 ```
+#in terminal
 sudo pip install -U scikit-learn
+
+#in IPython
+!pip install -U scikit-learn
+
 ```
+##See modules
+'''
+help('modules')
+'''
+
+##site packages
+'''
+import site
+site.getsitepackages()
+'''
+
+##Error
+###sciki-learn
+Install new sciki-learn package without deleting old ones will create error message. 
+```
+ImportError: cannot import name inplace_column_scale
+```
+Solution: Manually delete all the sciki learn files under sit-package including sklearn folder, scikit_learn-0.16.1-py2.7.egg-info and then reinstall the package.
+
+
 
 ##Run Python file
 ```
